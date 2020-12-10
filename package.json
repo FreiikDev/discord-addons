@@ -1,0 +1,21 @@
+{
+  "name": "discord-addons",
+  "version": "1.0.0",
+  "description": "More Discord.Js events.",
+  "main": "index.js",
+  "keywords": [
+    "events",
+    "discord-events",
+    "discord",
+    "extras",
+    "addons",
+    "discord-addons",
+    "discord-extras"
+  ],
+  "author": "Freiik",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fs": "0.0.1-security"
+  }
+}
