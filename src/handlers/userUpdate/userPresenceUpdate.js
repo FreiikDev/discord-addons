@@ -13,7 +13,7 @@ module.exports = async (oldUser, newUser) => {
    * @param {Discord:User} User
    * @param {Discord:Presence} Old presence
    * @param {Discord:Presence} New presence
-   * @exemple
+   * @example
    * client.on(event, async (user, oldPresence, newPresence) => {
    *  console.log(`The user with the id ${user.id} updated his presence (${oldPresence} => ${newPresence}).`);
    * });

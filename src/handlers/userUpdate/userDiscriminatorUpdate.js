@@ -13,7 +13,7 @@ module.exports = async (oldUser, newUser) => {
    * @param {Discord:User} User
    * @param {String} Old discriminator
    * @param {String} New discriminator
-   * @exemple
+   * @example
    * client.on(event, async (user, oldDiscriminator, newDiscriminator) => {
    *  console.log(`The user with the id ${user.id} updated his discriminator (${oldDiscriminator} => ${newDiscriminator}).`);
    * });

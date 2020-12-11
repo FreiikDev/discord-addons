@@ -12,7 +12,7 @@ module.exports = async (oldGuild, newGuild) => {
    * @description Emitted when the guild vanity is added
    * @param {Discord:Guild} The guild where the changes were made
    * @param {String} The new guild vanity URL
-   * @exemple
+   * @example
    * client.on(event, async (guild, newVanity) => {
    *  console.log(`The guild with the id ${guild.id} added vanity url (${newVanity}).`);
    * });

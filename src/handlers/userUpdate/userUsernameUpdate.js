@@ -13,7 +13,7 @@ module.exports = async (oldUser, newUser) => {
    * @param {Discord:User} User
    * @param {String} Old username
    * @param {String} New username
-   * @exemple
+   * @example
    * client.on(event, async (user, oldUsername, newUsername) => {
    *  console.log(`The user with the id ${user.id} updated his username (${oldUsername} => ${newUsername}).`);
    * });

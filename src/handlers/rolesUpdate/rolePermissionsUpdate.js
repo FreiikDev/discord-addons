@@ -13,7 +13,7 @@ module.exports = async (oldChannel, newChannel) => {
    * @param {Discord:Role} Role
    * @param {Discord:Permissions} Old permissions
    * @param {Discord:Permissions} New permissions
-   * @exemple
+   * @example
    * client.on(event, async (role, oldPermissions, newPermissions) => {
    *  console.log(`The role with the id ${role.id} updated his role permissions (${oldPermissions} => ${newPermissions}).`);
    * });

@@ -13,7 +13,7 @@ module.exports = async (oldGuild, newGuild) => {
    * @param {Discord:Guild} The guild where the changes were made
    * @param {String} The old verification level
    * @param {String} The new verification level
-   * @exemple
+   * @example
    * client.on(event, async (guild, oldVerification, newVerification) => {
    *  console.log(`The guild with the id ${guild.id} updated verification level (${oldVerification} => ${newVerification}).`);
    * });

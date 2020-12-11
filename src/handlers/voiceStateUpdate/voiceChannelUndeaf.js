@@ -13,7 +13,7 @@ module.exports = async (oldState, newState) => {
    * @param {Discord:GuildMember} Guild member
    * @param {Discord:GuildVoiceChannel} Member channel
    * @param {Discord:VoiceState} Voice state
-   * @exemple
+   * @example
    * client.on(event, async (member, channel, status) => {
    *  console.log(`The member with the id ${member.id} updated his voice status (${status}) in the voice channel ${Discord:GuildChannel}.`);
    * });

@@ -13,7 +13,7 @@ module.exports = async (oldChannel, newChannel) => {
    * @param {Discord:Role} Role
    * @param {Number} Old position
    * @param {Number} New position
-   * @exemple
+   * @example
    * client.on(event, async (channel, oldPosition, newPosition) => {
    *  console.log(`The channel with the id ${channel.id} updated his channel position (${oldPosition} => ${newPosition}).`);
    * });

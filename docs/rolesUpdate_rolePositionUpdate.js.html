@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Discord-Addons: rolesUpdate/rolePositionUpdate.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: rolesUpdate/rolePositionUpdate.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const event = __filename
+  .replace(__dirname, "")
+  .split(".")
+  .slice(0, -1)
+  .join(".")
+  .replace("/", "")
+  .replace("\\", "");
+
+module.exports = async (oldRole, newRole) => {
+  /**
+   * @event this
+   * @description Emitted when a role position is changed
+   * @param {Discord:Role} Role
+   * @param {Number} Old position
+   * @param {Number} New position
+   * @example
+   * client.on(event, async (role, oldPosition, newPosition) => {
+   *  console.log(`The role with the id ${role.id} updated his role position (${oldPosition} => ${newPosition}).`);
+   * });
+   */
+
+  var client = oldRole.client;
+  if (oldRole.postion !== newRole.postion)
+    return client.emit(event, newRole, oldRole.postion, newRole.postion);
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Events</h3><ul><li><a href="guildUpdate_guildAFKChannelAdd.js.html">guildAFKChannelAdd</a></li><li><a href="guildUpdate_guildAFKChannelRemove.js.html">guildAFKChannelRemove</a></li><li><a href="guildUpdate_guildAFKChannelUpdate.js.html">guildAFKChannelUpdate</a></li><li><a href="guildUpdate_guildBannerAdd.js.html">guildBannerAdd</a></li><li><a href="guildUpdate_guildBannerRemove.js.html">guildBannerRemove</a></li><li><a href="guildUpdate_guildBannerUpdate.js.html">guildBannerUpdate</a></li><li><a href="guildUpdate_guildBoostLevelDown.js.html">guildBoostLevelDown</a></li><li><a href="guildUpdate_guildBoostLevelUp.js.html">guildBoostLevelUp</a></li><li><a href="guildUpdate_guildBoostLevelUpdate.js.html">guildBoostLevelUpdate</a></li><li><a href="channelUpdate_guildChannelPermissionsUpdate.js.html">guildChannelPermissionsUpdate</a></li><li><a href="channelUpdate_guildChannelPositionUpdate.js.html">guildChannelPositionUpdate</a></li><li><a href="channelUpdate_guildChannelWebhookCreate.js.html">guildChannelWebhookCreate</a></li><li><a href="channelUpdate_guildChannelWebhookRemove.js.html">guildChannelWebhookRemove</a></li><li><a href="channelUpdate_guildChannelWebhookUpdate.js.html">guildChannelWebhookUpdate</a></li><li><a href="guildUpdate_guildIconAdd.js.html">guildIconAdd</a></li><li><a href="guildUpdate_guildIconRemove.js.html">guildIconRemove</a></li><li><a href="guildUpdate_guildIconUpdate.js.html">guildIconUpdate</a></li><li><a href="guildUpdate_guildModeratorChannelAdd.js.html">guildModeratorChannelAdd</a></li><li><a href="guildUpdate_guildModeratorChannelRemove.js.html">guildModeratorChannelRemove</a></li><li><a href="guildUpdate_guildModeratorChannelUpdate.js.html">guildModeratorChannelUpdate</a></li><li><a href="guildUpdate_guildNameUpdate.js.html">guildNameUpdate</a></li><li><a href="guildUpdate_guildNotificationsSettingsUpdate.js.html">guildNotificationsSettingsUpdate</a></li><li><a href="guildUpdate_guildRegionUpdate.js.html">guildRegionUpdate</a></li><li><a href="guildUpdate_guildRulesChannelAdd.js.html">guildRulesChannelAdd</a></li><li><a href="guildUpdate_guildRulesChannelRemove.js.html">guildRulesChannelRemove</a></li><li><a href="guildUpdate_guildRulesChannelUpdate.js.html">guildRulesChannelUpdate</a></li><li><a href="guildUpdate_guildSplashAdd.js.html">guildSplashAdd</a></li><li><a href="guildUpdate_guildSplashRemove.js.html">guildSplashRemove</a></li><li><a href="guildUpdate_guildSplashUpdate.js.html">guildSplashUpdate</a></li><li><a href="guildUpdate_guildSystemChannelAdd.js.html">guildSystemChannelAdd</a></li><li><a href="guildUpdate_guildSystemChannelRemove.js.html">guildSystemChannelRemove</a></li><li><a href="guildUpdate_guildSystemChannelUpdate.js.html">guildSystemChannelUpdate</a></li><li><a href="guildUpdate_guildVanityURLAdd.js.html">guildVanityURLAdd</a></li><li><a href="guildUpdate_guildVanityURLRemove.js.html">guildVanityURLRemove</a></li><li><a href="guildUpdate_guildVanityURLUpdate.js.html">guildVanityURLUpdate</a></li><li><a href="guildUpdate_guildVerificationLevelUpdate.js.html">guildVerificationLevelUpdate</a></li><li><a href="guildMemberUpdate_memberBoost.js.html">memberBoost</a></li><li><a href="guildMemberUpdate_memberNicknameUpdate.js.html">memberNicknameUpdate</a></li><li><a href="guildMemberUpdate_memberRoleRemove.js.html">memberRoleRemove</a></li><li><a href="guildMemberUpdate_memberUnboost.js.html">memberUnboost</a></li><li><a href="roleUpdate_rolePermissionsUpdate.js.html">rolePermissionsUpdate</a></li><li><a href="roleUpdate_rolePositionUpdate.js.html">rolePositionUpdate</a></li><li><a href="userUpdate_userAvatarUpdate.js.html">userAvatarUpdate</a></li><li><a href="userUpdate_userDiscriminatorUpdate.js.html">userDiscriminatorUpdate</a></li><li><a href="userUpdate_userFlagsUpdate.js.html">userFlagsUpdate</a></li><li><a href="userUpdate_userPresenceUpdate.js.html">userPresenceUpdate</a></li><li><a href="userUpdate_userUsernameUpdate.js.html">userUsernameUpdate</a></li><li><a href="voiceStateUpdate_voiceChannelCameraStart.js.html">voiceChannelCameraStart</a></li><li><a href="voiceStateUpdate_voiceChannelCameraStop.js.html">voiceChannelCameraStop</a></li><li><a href="voiceStateUpdate_voiceChannelDeaf.js.html">voiceChannelDeaf</a></li><li><a href="voiceStateUpdate_voiceChannelJoin.js.html">voiceChannelJoin</a></li><li><a href="voiceStateUpdate_voiceChannelLeave.js.html">voiceChannelLeave</a></li><li><a href="voiceStateUpdate_voiceChannelMute.js.html">voiceChannelMute</a></li><li><a href="voiceStateUpdate_voiceChannelStreamStart.js.html">voiceChannelStreamStart</a></li><li><a href="voiceStateUpdate_voiceChannelStreamStop.js.html">voiceChannelStreamStop</a></li><li><a href="voiceStateUpdate_voiceChannelSwitch.js.html">voiceChannelSwitch</a></li><li><a href="voiceStateUpdate_voiceChannelUndeaf.js.html">voiceChannelUndeaf</a></li><li><a href="voiceStateUpdate_voiceChannelUnmute.js.html">voiceChannelUnmute</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc</a>
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

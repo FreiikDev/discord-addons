@@ -13,7 +13,7 @@ module.exports = async (oldGuild, newGuild) => {
    * @param {Discord:Guild} The guild where the changes were made
    * @param {Discord:TextChannel} The old system channel
    * @param {Discord:TextChannel} The new system channel
-   * @exemple
+   * @example
    * client.on(event, async (guild, oldSystemChannel, newSystemChannel) => {
    *  console.log(`The guild with the id ${guild.id} updated system channel (${oldSystemChannel} => ${newSystemChannel}).`);
    * });

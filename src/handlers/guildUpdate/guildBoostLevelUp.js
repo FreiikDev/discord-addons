@@ -12,7 +12,7 @@ module.exports = async (oldGuild, newGuild) => {
    * @description Emitted when boosts upgrade
    * @param {Discord:Guild} The guild where the changes were made
    * @param {Number} Boosts number
-   * @exemple
+   * @example
    * client.on(event, async (guild, newBoostsNumber) => {
    *  console.log(`The guild with the id ${guild.id} has level up the number of boosts (${newBoostsNumber}).`);
    * });

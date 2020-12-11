@@ -13,7 +13,7 @@ module.exports = async (oldGuild, newGuild) => {
    * @param {Discord:Guild} The guild where the changes were made
    * @param {String} The old settings
    * @param {String} The new settings
-   * @exemple
+   * @example
    * client.on(event, async (guild, oldNotificationSettings, newNotificationSettings) => {
    *  console.log(`The guild with the id ${guild.id} updated notification settings (${oldNotificationSettings} => ${newNotificationSettings}).`);
    * });

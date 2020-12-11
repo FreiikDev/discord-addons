@@ -13,7 +13,7 @@ module.exports = async (oldChannel, newChannel) => {
    * @param {Discord:GuildTextChannel} Channel where change were made
    * @param {Discord:Permissions} Old permissions
    * @param {Discord:Permissions} New permissions
-   * @exemple
+   * @example
    * client.on(event, async (channel, oldPermissions, newPermissions) => {
    *  console.log(`The channel with the id ${channel.id} updated his channel permissions (${oldPermissions} => ${newPermissions}).`);
    * });

@@ -13,7 +13,7 @@ module.exports = async (oldUser, newUser) => {
    * @param {Discord:User} User
    * @param {Discord:UserFlags} Old flags
    * @param {Discord:UserFlags} New flags
-   * @exemple
+   * @example
    * client.on(event, async (user, oldFlags, newFlags) => {
    *  console.log(`The user with the id ${user.id} updated his flags (${oldFlags} => ${newFlags}).`);
    * });

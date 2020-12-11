@@ -12,7 +12,7 @@ module.exports = async (oldState, newState) => {
    * @description Emitted when a member stop his stream
    * @param {Discord:GuildMember} Guild member
    * @param {Discord:GuildVoiceChannel} Member channel
-   * @exemple
+   * @example
    * client.on(event, async (member, channel) => {
    *  console.log(`The member with the id ${member.id} stopped his stream in ${Discord:GuildChannel}.`);
    * });

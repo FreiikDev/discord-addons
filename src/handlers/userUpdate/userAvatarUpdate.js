@@ -13,7 +13,7 @@ module.exports = async (oldUser, newUser) => {
    * @param {Discord:User} User
    * @param {String} Old avatar URL
    * @param {String} New avatar URL
-   * @exemple
+   * @example
    * client.on(event, async (user, oldAvatar, newAvatar) => {
    *  console.log(`The user with the id ${user.id} updated his avatar (${oldAvatar} => ${newAvatar}).`);
    * });

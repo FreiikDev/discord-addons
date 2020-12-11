@@ -12,7 +12,7 @@ module.exports = async (oldState, newState) => {
    * @description Emitted when a member leave voice channel
    * @param {Discord:GuildMember} Guild member
    * @param {Discord:GuildVoiceChannel} Old member channel
-   * @exemple
+   * @example
    * client.on(event, async (member, oldChannel) => {
    *  console.log(`The member with the id ${member.id} left voice channel (${oldChannel}).`);
    * });
