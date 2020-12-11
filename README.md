@@ -1,4 +1,4 @@
-<p align="center"><img height="160" align="center" src="https://freiikdev.github.io/discord-addons/docs/img/logo.png" alt="logo"/></p>
+<p align="center"><img height="160" align="center" src="https://freiikdev.github.io/discord-addons/img/logo.png" alt="logo"/></p>
 <br>
 <p align="center">
   <a href="https://npmjs.com/discord-addons/">

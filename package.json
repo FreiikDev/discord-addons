@@ -1,8 +1,11 @@
 {
   "name": "discord-addons",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Exceptional additions of events for Discord.Js",
-  "repository": "https://github.com/FreiikDev/discord-addons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreiikDev/discord-addons.git"
+  },
   "main": "index.js",
   "keywords": [
     "events",
