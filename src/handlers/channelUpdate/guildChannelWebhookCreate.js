@@ -20,7 +20,7 @@ module.exports = async (oldChannel, newChannel) => {
 
   var client = newChannel.client;
   if (
-    newChannel.type != "dm" && newChannel.type != "voice"
+    newChannel.type != "dm" && newChannel.type != "voice" &&
     newChannel.fetchWebhooks().size < newChannel.fetchWebhooks().size
   )
     return client.emit(event, newChannel, newChannel.fetchWebhooks().size);
