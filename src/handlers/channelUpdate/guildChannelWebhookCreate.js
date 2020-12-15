@@ -23,5 +23,5 @@ module.exports = async (oldChannel, newChannel) => {
     newChannel.type != "dm" &&
     newChannel.fetchWebhooks().size < newChannel.fetchWebhooks().size
   )
-    return client.emit(event, newChannel, newChannel.fetchWebhooks().size);
+    client.emit(event, newChannel, newChannel.fetchWebhooks().size);
 };

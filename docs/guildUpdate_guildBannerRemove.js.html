@@ -54,7 +54,7 @@ module.exports = async (oldGuild, newGuild) => {
     oldGuild.banner !== (null || undefined) &amp;&amp;
     newGuild.banner === (null || undefined)
   )
-    return client.emit(
+    client.emit(
       event,
       oldGuild,
       oldGuild.bannerURL({

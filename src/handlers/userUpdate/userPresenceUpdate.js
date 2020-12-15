@@ -21,5 +21,5 @@ module.exports = async (oldUser, newUser) => {
 
   var client = oldUser.client;
   if (oldUser.presence != newUser.presence)
-    return client.emit(event, newUser, oldUser.presence, newUser.presence);
+    client.emit(event, newUser, oldUser.presence, newUser.presence);
 };

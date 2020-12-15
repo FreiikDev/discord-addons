@@ -20,5 +20,5 @@ module.exports = async (oldState, newState) => {
 
   var client = oldState.client;
   if (oldState.streaming && !newState.streaming)
-    return client.emit(event, newState.member, newState.channel);
+    client.emit(event, newState.member, newState.channel);
    }

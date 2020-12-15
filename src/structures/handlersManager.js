@@ -1,12 +1,12 @@
-const fs = require("fs");
+const {readdirSync} = require("fs");
 
 module.exports = class handlersManager {
   constructor(client) {
     this.client = client;
     var source = `${__dirname}/../handlers/`;
-    fs.readdirSync(source).forEach((dir) => {
+    readdirSync(source).forEach((dir) => {
       if (dir[0] != ".") {
-        fs.readdirSync(source + dir)
+        readdirSync(source + dir)
           .filter((f) => f.endsWith(".js"))
           .forEach((f, i) => {
             try {

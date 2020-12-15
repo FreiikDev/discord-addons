@@ -54,7 +54,7 @@ module.exports = async (oldGuild, newGuild) => {
     oldGuild.splash !== newGuild.splash &amp;&amp;
     newGuild.splash === (null || undefined)
   )
-    return client.emit(
+    client.emit(
       event,
       newGuild,
       newGuild.splashURL({

@@ -24,7 +24,7 @@ module.exports = async (oldChannel, newChannel) => {
     oldChannel.type != "dm" &&
     oldChannel.permissions !== newChannel.permissions
   )
-    return client.emit(
+    client.emit(
       event,
       newChannel,
       oldChannel.permissions,

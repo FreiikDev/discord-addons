@@ -52,7 +52,7 @@ module.exports = async (oldUser, newUser) => {
 
   var client = oldUser.client;
   if (oldUser.avatar != newUser.avatar)
-    return client.emit(event, newUser, oldUser.avatar, newUser.avatar);
+    client.emit(event, newUser, oldUser.avatar, newUser.avatar);
 };
 </code></pre>
         </article>

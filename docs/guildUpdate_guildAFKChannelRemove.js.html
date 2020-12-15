@@ -54,7 +54,7 @@ module.exports = async (oldGuild, newGuild) => {
     oldGuild.afkChannelID != newGuild.afkChannelID &amp;&amp;
     newGuild.afkChannelID == (null || undefined)
   )
-    return client.emit(event, newGuild, oldGuild.afkChannel);
+    client.emit(event, newGuild, oldGuild.afkChannel);
 };
 </code></pre>
         </article>

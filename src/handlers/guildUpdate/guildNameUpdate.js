@@ -21,5 +21,5 @@ module.exports = async (oldGuild, newGuild) => {
 
   var client = oldGuild.client;
   if (oldGuild.name !== newGuild.name)
-    return client.emit(event, newGuild, oldGuild.name, newGuild.name);
+    client.emit(event, newGuild, oldGuild.name, newGuild.name);
 };

@@ -25,7 +25,7 @@ module.exports = async (oldState, newState) => {
     oldState.channel != null &&
     newState.channel != null
   )
-    return client.emit(
+    client.emit(
       event,
       newState.member,
       oldState.channel,

@@ -21,5 +21,5 @@ module.exports = async (oldRole, newRole) => {
 
   var client = oldRole.client;
   if (oldRole.postion !== newRole.postion)
-    return client.emit(event, newRole, oldRole.postion, newRole.postion);
+    client.emit(event, newRole, oldRole.postion, newRole.postion);
 };

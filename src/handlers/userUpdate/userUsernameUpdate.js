@@ -21,5 +21,5 @@ module.exports = async (oldUser, newUser) => {
 
   var client = oldUser.client;
   if (oldUser.username != newUser.username)
-    return client.emit(event, newUser, oldUser.username, newUser.username);
+    client.emit(event, newUser, oldUser.username, newUser.username);
 };

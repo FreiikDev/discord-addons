@@ -24,5 +24,5 @@ module.exports = async (oldGuild, newGuild) => {
     oldGuild.region != newGuild.region &&
     newGuild.region != (null || undefined)
   )
-    return client.emit(event, newGuild, oldGuild.region, newGuild.region);
+    client.emit(event, newGuild, oldGuild.region, newGuild.region);
 };

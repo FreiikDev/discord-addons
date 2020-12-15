@@ -52,7 +52,7 @@ module.exports = async (oldGuild, newGuild) => {
 
   var client = oldGuild.client;
   if (oldGuild.icon != newGuild.icon &amp;&amp; newGuild.icon != (null || undefined))
-    return client.emit(
+    client.emit(
       event,
       newGuild,
       oldGuild.iconURL({

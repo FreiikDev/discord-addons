@@ -23,7 +23,7 @@ module.exports = async (oldGuild, newGuild) => {
     oldGuild.icon !== (null || undefined) &&
     newGuild.icon === (null || undefined)
   )
-    return client.emit(
+    client.emit(
       event,
       oldGuild,
       oldGuild.iconURL({

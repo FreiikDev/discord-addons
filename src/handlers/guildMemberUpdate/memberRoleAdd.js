@@ -18,6 +18,6 @@ module.exports = async (oldMember, newMember) => {
   var client = oldMember.client;
   newMember.roles.cache.forEach((role) => {
     if (!oldMember.roles.cache.has(role.id))
-      return client.emit(event, newMember, role);
+      client.emit(event, newMember, role);
   });
 };

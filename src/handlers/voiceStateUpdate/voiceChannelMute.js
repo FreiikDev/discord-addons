@@ -21,7 +21,7 @@ module.exports = async (oldState, newState) => {
 
   var client = oldState.client;
   if (!oldState.mute && newState.mute)
-    return client.emit(
+    client.emit(
       event,
       newState.member,
       newState.channel,

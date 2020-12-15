@@ -25,7 +25,7 @@ module.exports = async (oldGuild, newGuild) => {
     newGuild.verificationLevel != (null || undefined) &&
     oldGuild.verificationLevel != (null || undefined)
   )
-    return client.emit(
+    client.emit(
       event,
       newGuild,
       oldGuild.verificationLevel,

@@ -23,5 +23,5 @@ module.exports = async (oldGuild, newGuild) => {
     oldGuild.systemChannelID != newGuild.systemChannelID &&
     oldGuild.systemChannelID == (null || undefined)
   )
-    return client.emit(event, newGuild, newGuild.systemChannel);
+    client.emit(event, newGuild, newGuild.systemChannel);
 };

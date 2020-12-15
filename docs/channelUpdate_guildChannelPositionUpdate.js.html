@@ -52,7 +52,7 @@ module.exports = async (oldChannel, newChannel) => {
 
   var client = oldChannel.client;
   if (oldChannel.type != "dm" &amp;&amp; oldChannel.postion !== newChannel.postion)
-    return client.emit(
+    client.emit(
       event,
       newChannel,
       oldChannel.postion,

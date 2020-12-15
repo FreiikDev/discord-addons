@@ -20,5 +20,5 @@ module.exports = async (oldGuild, newGuild) => {
 
   var client = oldGuild.client;
   if (oldGuild.premiumSubscriptionCount > newGuild.premiumSubscriptionCount)
-    return client.emit(event, newGuild, newGuild.premiumSubscriptionCount);
+    client.emit(event, newGuild, newGuild.premiumSubscriptionCount);
 };

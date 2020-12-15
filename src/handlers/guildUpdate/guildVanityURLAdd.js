@@ -23,5 +23,5 @@ module.exports = async (oldGuild, newGuild) => {
     oldGuild.vanityURLCode != newGuild.vanityURLCode &&
     oldGuild.vanityURLCode == (null || undefined)
   )
-    return client.emit(event, newGuild, newGuild.vanityURLCode);
+    client.emit(event, newGuild, newGuild.vanityURLCode);
 };

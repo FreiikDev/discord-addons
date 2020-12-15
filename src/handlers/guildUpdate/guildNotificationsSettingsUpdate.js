@@ -26,7 +26,7 @@ module.exports = async (oldGuild, newGuild) => {
     newGuild.defaultMessageNotifications != (null || undefined) &&
     oldGuild.defaultMessageNotifications != (null || undefined)
   )
-    return client.emit(
+    client.emit(
       event,
       newGuild,
       oldGuild.defaultMessageNotifications,

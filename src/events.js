@@ -4,8 +4,8 @@ const { Client } = require("discord.js");
 module.exports = class events {
   constructor(client) {
     async () => {
-      let login = await new Client().login(this.token).catch((e) => {
-        return console.log(
+      let login = await new Client().login(this.token).catch(() => {
+        console.log(
           `The client connected to ${
             require("../package.json").name
           } is invalid.`

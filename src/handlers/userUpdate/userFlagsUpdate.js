@@ -21,5 +21,5 @@ module.exports = async (oldUser, newUser) => {
 
   var client = oldUser.client;
   if (oldUser.flags != newUser.flags)
-    return client.emit(event, newUser, oldUser.flags, newUser.flags);
+    client.emit(event, newUser, oldUser.flags, newUser.flags);
 };

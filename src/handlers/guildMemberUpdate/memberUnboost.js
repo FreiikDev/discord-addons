@@ -16,5 +16,5 @@ module.exports = async (oldMember, newMember) => {
 
   var client = oldMember.client;
   if (oldMember.premiumSince && !newMember.premiumSince)
-    return client.emit(event, newMember);
+    client.emit(event, newMember);
 };

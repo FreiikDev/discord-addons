@@ -52,7 +52,7 @@ module.exports = async (oldUser, newUser) => {
 
   var client = oldUser.client;
   if (oldUser.discriminator != newUser.discriminator)
-    return client.emit(
+    client.emit(
       event,
       newUser,
       oldUser.discriminator,
